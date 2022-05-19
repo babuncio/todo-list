@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    background-color: rgb(54, 54, 54);
+    color: rgb(45, 253, 208);
+    min-height: 100vh;
+}
+
+header, form {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.7rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    outline: none;
+}
+
+form button {
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+form button:hover{
+    color:rgb(45, 253, 208);
+    
+
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 50%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.fa-check, .fa-minus {
+pointer-events: none;
+}
+
+.finished-button, .deleted-button {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.finished-button:hover {
+    background-color: rgb(45, 253, 208);
+    color: rgb(54, 54, 54);
+    transition: all 0.5s ease;
+}
+
+.deleted-button:hover {
+    background-color: rgb(255, 72, 200);
+    color:rgb(54, 54, 54);
+    transition: all 0.5s ease;
+}
+
+.new-todo {
+    margin: 0rem 1rem;
+    font-size: 2rem;
+}    
+
+.finish {
+    text-decoration: line-through;
+    opacity: 50%;
+}
